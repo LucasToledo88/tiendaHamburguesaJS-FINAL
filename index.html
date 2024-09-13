@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tienda de Hamburguesas</title>
+  </head>
+  <body>
+    <h1>Tienda de Hamburguesas y Papas Fritas</h1>
+
+    <div class="enlace-seleccion">
+      <div class="enlace-card">
+        <h2>Arma tu Hamburguesa</h2>
+        <p>
+          ¡Personaliza tu hamburguesa con los ingredientes que más te gusten!
+        </p>
+        <a href="armaHamburguesa.html">Armar mi Hamburguesa</a>
+      </div>
+    </div>
+
+    <h2>Hamburguesas</h2>
+    <div class="productos-container" id="hamburguesas"></div>
+
+    <h2>Papas Fritas</h2>
+    <div class="productos-container" id="papas"></div>
+
+    <h2>Carrito de Compras</h2>
+    <div id="carrito"></div>
+    <p>Total: $<span id="total">0</span></p>
+
+    <button id="comprar" onclick="comprar()">Comprar</button>
+
+    <div id="modalCarritoVacio" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>El carrito está vacío. Añade productos antes de comprar.</p>
+      </div>
+    </div>
+
+    <div id="modalCompraExitosa" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Usted sera redireccionado para elegir el metodo de pago</p>
+      </div>
+    </div>
+
+    <script src="carrito.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+[
+    { "nombre": "Hamburguesa Clásica", "precio": 3000, "imagen": "img/clasica.jpeg" },
+    { "nombre": "Hamburguesa con Queso", "precio": 3500, "imagen": "img/queso.jpeg" },
+    { "nombre": "Hamburguesa BBQ", "precio": 4000, "imagen": "img/bbq.jpeg" },
+    { "nombre": "Hamburguesa Vegetariana", "precio": 4000, "imagen": "img/vegetariana.jpeg" },
+    { "nombre": "Hamburguesa Picante", "precio": 3800, "imagen": "img/picante.jpeg" },
+    { "nombre": "Papas Chicas", "precio": 2000, "imagen": "img/papasChicas.jpeg" },
+    { "nombre": "Papas Medianas", "precio": 3250, "imagen": "img/papasMedianas.jpeg" },
+    { "nombre": "Papas Grandes", "precio": 4100, "imagen": "img/papasGrandes.jpeg" }
+]

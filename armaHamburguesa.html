@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Arma tu Hamburguesa</title>
+  </head>
+  <body>
+    <h1>Arma tu Hamburguesa</h1>
+
+    <div id="armaHamburguesa">
+      <h2>Selecciona tus ingredientes:</h2>
+      <h6>
+        *La hamburguesa estándar viene con: 1 Medallón de carne y pan de papa
+        (todo lo demás le puedes agregar a tu Hamburguesa personalizada 😊❤️🍔)
+      </h6>
+      <form id="formArmarHamburguesa">
+        <div class="ingredientes">
+          <label
+            ><input type="checkbox" name="ingredientes" value="Queso" /> Queso
+            ($1000)</label
+          ><br />
+          <label
+            ><input type="checkbox" name="ingredientes" value="Bacon" /> Bacon
+            ($1000)</label
+          ><br />
+          <label
+            ><input type="checkbox" name="ingredientes" value="Lechuga" />
+            Lechuga ($1000)</label
+          ><br />
+          <label
+            ><input type="checkbox" name="ingredientes" value="Tomate" /> Tomate
+            ($1000)</label
+          ><br />
+          <label
+            ><input type="checkbox" name="ingredientes" value="Cebolla" />
+            Cebolla ($1000)</label
+          ><br />
+          <label
+            ><input type="checkbox" name="ingredientes" value="SalsaPicante" />
+            Salsa Picante ($1000)</label
+          ><br />
+          <label
+            ><input type="checkbox" name="ingredientes" value="Huevo" /> Huevo
+            ($1000)</label
+          ><br />
+        </div>
+
+        <button type="button" id="agregarCarritoBtn">Agregar al carrito</button>
+        <button type="button" id="volverCarritoBtn">Volver al carrito</button>
+      </form>
+    </div>
+
+    <script src="armaHamburguesa.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const agregarCarritoBtn = document.getElementById("agregarCarritoBtn");
+        agregarCarritoBtn.addEventListener("click", agregarHamburguesa);
+      });
+    </script>
+  </body>
+</html>

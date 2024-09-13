@@ -1,0 +1,43 @@
+<!-- formadepago.html -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Forma de Pago</title>
+  </head>
+  <body>
+    <h1>Selecciona tu Forma de Pago</h1>
+
+    <form id="formPago" onsubmit="return realizarCompra()">
+      <label>
+        <input
+          type="radio"
+          name="metodoPago"
+          value="Tarjeta de Crédito"
+          required
+        />
+        Tarjeta de Crédito </label
+      ><br />
+      <label>
+        <input type="radio" name="metodoPago" value="PayPal" required />
+        PayPal </label
+      ><br />
+      <label>
+        <input type="radio" name="metodoPago" value="Efectivo" required />
+        Efectivo </label
+      ><br /><br />
+
+      <button type="submit">Finalizar Compra</button>
+    </form>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <p id="modalMensaje">Mensaje aquí</p>
+      </div>
+    </div>
+    <script src="formadepago.js"></script>
+  </body>
+</html>

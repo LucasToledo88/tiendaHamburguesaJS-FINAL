@@ -1,0 +1,293 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.producto img {
+    max-width: 100px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.producto p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.producto button,
+#carrito button {
+    transition: background-color 0.3s ease;
+}
+
+
+.producto button:hover {
+    background-color: #218838;
+}
+
+#carrito {
+    background-color: #fdfd96;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#carrito p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#carrito button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 0 5px;   
+    
+}
+
+#carrito button {
+    display: inline-block;
+    margin: 0; /* Eliminar margen extra */
+}
+
+#carrito button:hover {
+    background-color: #0056b3;
+}
+
+
+#total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .producto {
+        width: 100%;
+    }
+}
+
+
+/* Añadir al final de style.css */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+  }
+  
+  .modal-contenido {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; 
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cerrar:hover,
+  .cerrar:focus {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en pantalla */
+    z-index: 1; /* Por encima de otros elementos */
+    padding-top: 100px; /* Espacio superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Scroll en caso de contenido grande */
+    background-color: rgb(0,0,0); /* Fondo negro */
+    background-color: rgba(0,0,0,0.4); /* Transparencia */
+  }
+  
+  /* El Modal (fondo) */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en pantalla */
+    z-index: 1; /* Por encima de otros elementos */
+    padding-top: 100px; /* Espacio superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Scroll en caso de contenido grande */
+    background-color: rgb(0,0,0); /* Fondo negro */
+    background-color: rgba(0,0,0,0.4); /* Transparencia */
+  }
+  
+  /* Contenido del Modal */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+  }
+  
+  /* Botón de cierre */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #armaHamburguesa {
+    margin: 20px;
+  }
+  
+  .ingredientes label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .enlace-seleccion {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    /* Eliminar el height puede ayudar a ajustar el espacio */  
+    /* height: 100vh; */  
+    background-color: #f9f9f9;  
+    padding: 20px; /* Añadir un poco de padding si los elementos están cortados */  
+}  
+
+.enlace-card {  
+    background-color: #fff;  
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    text-align: center;  
+    padding: 20px;  
+    max-width: 300px;  
+    width: 100%; /* Cambiar width a 100% para ajustar mejor al contenedor */  
+}  
+
+.enlace-card h2 {  
+    /* Ajustar el margen si es necesario */  
+    margin: 0 0 20px; /* Esto elimina el margen superior */  
+    color: #333;  
+}  
+
+.enlace-card a {  
+    display: inline-block;  
+    padding: 15px 30px;  
+    font-size: 18px;  
+    color: #fff;  
+    background-color: #4CAF50;  
+    text-decoration: none;  
+    border-radius: 5px;  
+    transition: background-color 0.3s ease;  
+}  
+
+.enlace-card a:hover {  
+    background-color: #0056b3;  
+} 
